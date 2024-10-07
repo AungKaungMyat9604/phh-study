@@ -1,0 +1,16 @@
+.app-table-pages {
+  display: flex;
+  
+  .body {
+    display: flex;
+    padding: 8px;
+    color: aqua;
+
+    button[active='true'] {
+      color: white;
+      background-color: green;
+      margin: 0px 4px;
+    }
+    
+  }
+}
