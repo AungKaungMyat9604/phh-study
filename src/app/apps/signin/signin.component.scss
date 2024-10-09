@@ -1,0 +1,18 @@
+.app-window {
+  .body {
+    padding: 32px;
+    .signincard {
+      width: 360px;
+      .full-width{
+        width: 100%;
+      }
+      .logo-header-image {
+        background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+        background-size: cover;
+      }
+      mat-card-actions {
+        padding: 0px 16px;
+      }
+    }
+  }
+}

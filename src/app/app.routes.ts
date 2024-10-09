@@ -4,12 +4,17 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'home',
+    redirectTo: 'signin',
   },
   {
-    path: 'home',
+    path: 'signin',
     pathMatch: 'full',
     loadComponent: () =>
-      import('./apps/home/home.component').then((c) => c.HomeComponent),
+      import('./apps/signin/signin.component').then((c) => c.SigninComponent),
+  },
+  {
+    path: 'app',
+    loadChildren: () =>
+      import('./apps/app-frame/app-frame.module').then((m) => m.AppFrameModule),
   },
 ];
